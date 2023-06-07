@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Анекдоты про негров</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="home.html">Главная</a>
+        <a href="stirlitz.html">Анекдоты про Штирлица</a>
+        <a href="chapet.html">Анекдоты про Петьку и Чапаева</a>
+        <a href="negr.html">Анекдоты про негров</a>
+      </div>
+      <div class="slideshow-container">
+
+        <!-- изображения с числом и текстом подписи -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="chapet1.jpeg" style="width:50%">
+          <div class="text"></div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="chapet2.jpeg" style="width:50%">
+          <div class="text"></div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="chapet3.jpeg" style="width:50%">
+          <div class="text"></div>
+        </div>   
+      <!-- Точки/круги -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <script>
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 10000); // Меняйте изображение каждые 10 секунд
+}
+      </script>
+</body>
+</html>

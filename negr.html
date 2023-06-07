@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Анекдоты про негров</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="home.html">Главная</a>
+        <a href="stirlitz.html">Анекдоты про Штирлица</a>
+        <a href="chapet.html">Анекдоты про Петьку и Чапаева</a>
+        <a href="negr.html">Анекдоты про негров</a>
+      </div>
+      <!-- Контейнер слайд-шоу -->
+<div class="slideshow-container">
+
+    <!-- Полная ширина слайдов / цитат -->
+    <div class="mySlides">
+      <q>Зашли как-то в бар азиат, Гитлер и негр, а бармен достаёт ружьё и говорит: 
+        "У меня как раз три пули…" и стреляет в негра три раза.</q>
+      <p class="author">- конец одного из комиксов</p>
+    </div>
+  
+    <div class="mySlides">
+      <q>Как называют негра, который перевозит в жопе кокаин?
+        Баунти</q>
+      <p class="author">- анекдоты про негров</p>
+    </div>
+
+    <!-- Вперед/назад кнопки -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
+  <!-- Точки/пули/индикаторы -->
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+  <script>
+  var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+      <div class="services-box">
+        <div class="service">
+        <div class="flip-box">
+        <div class="flip-box-inner">
+        <div class="flip-box-front">
+        <h2>Анекдот 1</h2>
+        </div>
+        <div class="flip-box-back">
+        <p>Иду домой, смотрю — негр телевизор тащит. Я испугался, вдруг мой. Прибегаю домой — все в порядке. Мой траву косит.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        <div class="service">
+        <div class="flip-box">
+        <div class="flip-box-inner">
+        <div class="flip-box-front">
+        <h2>Анекдот 2</h2>
+        </div>
+        <div class="flip-box-back">
+        <p>В Британии снимут исторический фильм, в котором чернокожие англичане угоняют в рабство белокожих африканцев.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        <div class="service">
+        <div class="flip-box">
+        <div class="flip-box-inner">
+        <div class="flip-box-front">
+        <h2>Анекдот 3</h2>
+        </div>
+        <div class="flip-box-back">
+        <p>Для меня, как для чернокожего, самое обидное, когда женщина на улице проходит мимо меня, прижимая к себе сумочку… Как будто она всерьез думает, что сильнее меня.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        <div class="service">
+        <div class="flip-box">
+        <div class="flip-box-inner">
+        <div class="flip-box-front">
+        <h2>Анекдот 4</h2>
+        </div>
+        <div class="flip-box-back">
+        <p>— Как отыскать негра в темноте?
+          — Надо его рассмешить..</p>
+        </div>
+        </div>
+        </div>
+        </div>
+</body>
+</html>

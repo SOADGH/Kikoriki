@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анекдоты про Штирлица</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="home.html">Главная</a>
+        <a href="stirlitz.html">Анекдоты про Штирлица</a>
+        <a href="chapet.html">Анекдоты про Петьку и Чапаева</a>
+        <a href="negr.html">Анекдоты про негров</a>
+      </div>
+
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <q>Предательски хрустнули доски сортира. Еще никогда Штирлиц не был так близок к провалу.</q>
+        </div>
+        <div class="mySlides">
+          <q>До Штирлица не дошло письмо из центра. Он его еще раз перечитал, но все равно не
+            дошло.</q>
+        </div>
+        <div class="mySlides">
+          <q>Пошел Штирлиц по грибы. Поискал под одним деревом — ничего. Под другим — ничего. Под третьим — тоже пусто.
+            «Не сезон», — подумал Штирлиц и от огорчения сел в сугроб.</q>
+        
+          </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      
+      <body>
+
+        <div class="content">
+          <h2>На данной странице представлены анекдоты про Максима Максимович Исаева также известного как Штирлиц</h2>
+          <p>В нашей команде всего лишь 2 человека: Максим и Ирина</p>
+          <p>Мы делаем этот сайт для того, что бы показать анекдоты</p>
+          <p>Надеюсь он вам понравиться</p>
+          </div>
+
+        <div class="services-box">
+          <div class="service">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <h2>Чудеса чудесатые</h2>
+                </div>
+                <div class="flip-box-back">
+                  <p>Штирлиц попал в глубокую яму и чудом из нее вылез.
+                    «Чудес не бывает», — подумал Штирлиц и на всякий случай залез обратно.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="service">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <h2>Сон и водка</h2>
+                </div>
+                <div class="flip-box-back">
+                  <p>Поздно вечером в доме Штирлица раздался телефонный звонок. Подняв трубку, он услышал томный голос радистки Кэт: - Штирлиц, вам, наверное, одному не спится? - Отчего же! Спиться я могу и один! - ответил Штирлиц и налил очередной стакан водки...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="service">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <h2>Дозаправка крысы</h2>
+                </div>
+                <div class="flip-box-back">
+                  <p>Штирлиц поймал крысу и вколол ей в вену целый шприц бензина. Крыса пробежала два метра и упала замертво. - Бензин кончился, - догадался Штирлиц.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="service">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <h2>Про везение</h2>
+                </div>
+                <div class="flip-box-back">
+                  <p>Штирлиц медленно шел по ночной улице, внезапно у его виска просвистела пуля. - Пронесло! - подумал он и побежал стирать галифе.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="service">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <h2>Ягодицы Евы Браун</h2>
+                </div>
+                <div class="flip-box-back">
+                  <p>Штирлиц, на ягодицах Евы Браун нашли отпечатки ваших пальцев, как вы это объясните? - Мюллер, я знаю что сказать, а вот как вы объясните, как вы их там обнаружили? - Очень жаль Штирлиц, что вы работаете не у меня!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <script>var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }</script>
+</body>
+</html>
